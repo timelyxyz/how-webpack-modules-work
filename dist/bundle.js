@@ -74,7 +74,10 @@
 console.log('module b runs')
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'b'
+  name: 'b',
+  bFunc: function() {
+    alert('This is bFunc');
+  }
 });
 
 /***/ }),
@@ -102,6 +105,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 console.log(__WEBPACK_IMPORTED_MODULE_0__b__["a" /* default */].name)
 console.log(__WEBPACK_IMPORTED_MODULE_1__c__["a" /* default */].name)
+__WEBPACK_IMPORTED_MODULE_0__b__["a" /* default */].bFunc();
 
 /***/ })
 /******/ ]);
